@@ -1,189 +1,104 @@
-<!DOCTYPE html>
-<html lang="bg">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <!-- Главен таг -->
-    <meta charset="UTF-8"> <!-- Кодировка -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- За изглед на страницата -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Съвместимост на страницата -->
-    <meta name="discription" content="Моят първи проект"> <!-- Описание на страницата -->
-    <meta name="author" content="Александър Камбуров"> <!-- Автор -->
-    <title>Wordpress</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Bootstrap Project</title>
 </head>
 
 <body>
 
-    <section class="promo">
-        <div class="container">
-            <div class="logo">
-                <img src="icons/logo.png" alt="logo" class="logo_img">
-                <div class="logo_text">WordPress интенсив</div>
-            </div>
-
-            <h1 class="title">Создать свой сайт на WordPress</h1>
-            <div class="simple">
-                <h2 class="title_big">это просто!</h2>
-                <div class="line"></div>
-            </div>
-            <h2 class="title">Куда сложнее сделать это правильно!</h2>
-
-            <div class="promo_text">
-                Ежедневно в России появляется более 5 000 новых сайтов. <br> И только единицы из них становятся
-                популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем
-                двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!
-            </div>
-
-            <button class="promo_btn">Записаться на интенсив!</button>
-
-            <div class="more">
-                <div class="more_text">узнать больше об интенсиве</div>
-                <img src="icons/arow_down.png" alt="down" class="more_img">
-            </div>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"">
+        <div class=" container-fluid">
+        <a class="navbar-brand" href="#">Plami</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
         </div>
-    </section>
-
-    <section class="waiting">
-        <div class="container">
-            <h2 class="waiting_header">Что вас ждет в нашем интенсиве?</h2>
-            <div class="waiting_divider"></div>
-            <div class="waiting_subheader">2 бесплатных полноценных обучающих вебинара, где:</div>
-
-
-            <div class="waiting_wareper">
-                <div class="waiting_item">
-                    <img src="img/waiting/1.png" alt="" class="waiting_img">
-                    <div class="waiting_descrip">Всего за два бесплатных вебинара мы научим вас, как создать свой сайт
-                        на WordPress.</div>
-                </div>
-                <div class="waiting_item">
-                    <img src="img/waiting/2.png" alt="" class="waiting_img">
-                    <div class="waiting_descrip">Покажем, как правильно оптимизировать сайт и сделать его
-                        привлекательным для поисковых систем. Только свежая, профессиональная и
-                        актуальная информация!</div>
-                </div>
-                <div class="waiting_item">
-                    <img src="img/waiting/3.png" alt="" class="waiting_img">
-                    <div class="waiting_descrip">Вы узнаете, что такое «хорошая индексация»,
-                        «высокая посещаемость», «стабильный прирост посетителей», «ТОП по запросам» и, что намного
-                        важнее, как добиться всех этих показателей!</div>
-                </div>
-            </div>
-
-
         </div>
-    </section>
-
-    <section class="info">
-        <div class="container">
-            <div class="info_wraper">
-                <h2 class="info_header">Что такое оптимизация и зачем она нужна?</h2>
-                <div class="info_text">На просторах интернета несчетное количество действующих и даже заброшенных
-                    сайтов.
-                    Большинство из них совпадает не только по категориям, но и по содержанию.
-                    <br><br>
-                    Представьте себе тысячи сайтов, на которых тем или иным образом предоставляется одна и та же
-                    информация
-                    или продается одна и та же услуга. И попасть на эти сайты можно лишь по тематическим запросам в
-                    поисковых системах.
-                    <br><br>
-                    Но как вам быть, если ваш сайт похож на сотню или тысячу таких же, а на одной странице гугла или
-                    яндекса
-                    всего 10 позиций? Как привести посетителей страницы своего ресурса? Именно для этого и нужна
-                    оптимизация
-                    – для вывода вашего сайта на первую страницу поиска!
-                    <br><br>
-                    <span>Мы научим вас, как сделать ваш сайт привлекательным для поисковых систем и посоветуем, как
-                        вывести его
-                        на первые страницы, обходя всех конкурентов.</span>
-                </div>
-
-            </div>
-
-            <img src="img/bg/info_bg.png" alt="" class="info_img">
-        </div>
-
-    </section>
-
-    <section class="finish">
-        <div class="container">
-            <h2 class="finish_header">По окончании обучения Вы сможете!</h2>
-            <div class="finish_divider"></div>
-
-            <div class="finish_wraper">
-                <div class="finish_item">
-                    <div class="finish_eclipse">
-                        <img src="icons/finish/elipce_logo/1.png" alt="1" class="finish_logo">
-                    </div>
-                    <div class="finish_descr">Создать свой сайт или блог</div>
-                </div>
-                <div class="finish_item">
-                    <div class="finish_eclipse">
-                        <img src="icons/finish/elipce_logo/2.png" alt="2" class="finish_logo">
-                    </div>
-                    <div class="finish_descr">Правильно его оптимизировать</div>
-                </div>
-                <div class="finish_item">
-                    <div class="finish_eclipse">
-                        <img src="icons/finish/elipce_logo/3.png" alt="3" class="finish_logo">
-                    </div>
-                    <div class="finish_descr">Обеспечить ему медленный, но верный рост в ТОП</div>
-                </div>
-                <div class="finish_item">
-                    <div class="finish_eclipse">
-                        <img src="icons/finish/elipce_logo/4.png" alt="4" class="finish_logo">
-                    </div>
-                    <div class="finish_descr">Достигнуть стабильного прироста посетителей</div>
-                </div>
-                <div class="finish_item">
-                    <div class="finish_eclipse">
-                        <img src="icons/finish/elipce_logo/5.png" alt="5" class="finish_logo">
-                    </div>
-                    <div class="finish_descr">Получать ощутимую прибыль</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="prise">
-        <div class="container">
-            <div class="prise_wrapper">
-                <div class="prise_item">
-                    <img src="img/prise_top.png" alt="1" class="prise_img">
-                    <img src="img/prise_bt.png" alt="2" class="prise_img_bt">
-                </div>
-            </div>
-            <div class="prise_discr">Для всех участников интенсива предусмотрены бонусы и подарки. Нажимайте на кнопку
-                ниже,
-                принимайте участие в вебинарах и забирайте свой приз по окончании обучения!</div>
-            <button class="prise_btn">Записаться на интенсив!</button>
-        </div>
-    </section>
-
+    </nav>
 
     <div class="container">
-        <div class="begin_item">
-            <img src="img/waiting/1.png" alt="begin_img" class="begin_img">
+        <div class="row">
+            <div class="col">
+                <div class="card mt-5" style="width: 18rem;">
+                    <img src="https://cdn.pixabay.com/photo/2021/12/11/07/59/hotel-6862159_960_720.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-5" style="width: 18rem;">
+                    <img src="https://cdn.pixabay.com/photo/2021/12/11/07/59/hotel-6862159_960_720.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-5" style="width: 18rem;">
+                    <img src="https://cdn.pixabay.com/photo/2021/12/11/07/59/hotel-6862159_960_720.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2 class="begin_header">Первый вебинар состоится:</h2>
-        <h2 class="begin_discr">10 сентября в 20:00 по Москве</h2>
-        <div class="begin_text">Успейте записаться, количество мест ограничено!</div>
-
     </div>
 
-    <section class="footer">
-        <div class="footer_item">
-            <a href="#">Служба поддержки</a> | <a href="#">Политика конфиденциальности</a>
-            <br>Позвоните нам 8-800-555-01-21
-        </div>
-    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 
 </body>
